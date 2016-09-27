@@ -36,10 +36,10 @@ public class Knjiga {
         //konstruktor bez parametara obavezan za ORMLite
     }
 
-    public Knjiga(String naslov, int brojStrana, Date datumIzdanja) {
+    public Knjiga(String naslov, int brojStrana, Date datumIzdavanja) {
         this.naslov = naslov;
         this.brojStrana = brojStrana;
-        this.datumIzdanja=datumIzdanja;
+        this.datumIzdavanja=datumIzdavanja;
     }
 
     public int getId() {
@@ -64,6 +64,14 @@ public class Knjiga {
 
     public void setbrojStrana(int brojStrana) {
         this.brojStrana = brojStrana;
+    }
+
+    public Date getdatumIzdavanja() {
+        return datumIzdavanja;
+    }
+
+    public void setdatumIzdavanja(Date datumIzdavanja) {
+        this.datumIzdavanja = datumIzdavanja;
     }
 
     public ForeignCollection<Oblast> getOblasti() {

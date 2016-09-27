@@ -49,7 +49,7 @@ public class Oblast {
         return naziv;
     }
 
-    public void setNaziv(String naslov) {
+    public void setNaziv(String naziv) {
         this.naziv = naziv;
     }
 
@@ -57,7 +57,7 @@ public class Oblast {
         return pocetnaStrana;
     }
 
-    public void setpocetnaStrana(int pocetnaStrana) {
+    public void setPocetnaStrana(int pocetnaStrana) {
         this.pocetnaStrana = pocetnaStrana;
     }
 
@@ -66,7 +66,7 @@ public class Oblast {
         return knjiga;
     }
 
-    public void setKnjiga(Knjiga kniga) {
+    public void setKnjiga(Knjiga knjiga) {
         this.knjiga = knjiga;
     }
 

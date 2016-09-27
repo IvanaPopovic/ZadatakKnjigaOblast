@@ -19,7 +19,7 @@ public class Zadatak1KreiranjeTabela {
         ConnectionSource connectionSource = null;
         try {
             // create our data-source for the database
-            connectionSource = new JdbcConnectionSource("jdbc:sqlite:knjigaOblast.db");
+            connectionSource = new JdbcConnectionSource(Konstante.DATABASE_URL);
 
             TableUtils.dropTable(connectionSource, Oblast.class,true);
             TableUtils.dropTable(connectionSource, Knjiga.class,true);
